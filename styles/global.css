@@ -1,0 +1,146 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Pakati";
+  src: url("../Assets/Fonts/PurePakati-Notch.otf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #0d0d0d;
+}
+
+.link-white {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #468c3b;
+  color: #e5e5e5;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+header {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 70px;
+  gap: 20px;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+header .logo-wrapper {
+  width: 250px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Assets/Images/landing-cathedral-cove.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.landing h1 {
+  font-family: "Pakati", sans-serif;
+  padding-top: 170px;
+  color: #e5e5e5;
+  margin: 0;
+  font-size: 80px;
+  text-align: center;
+}
+.landing h2 {
+  color: #e5e5e5;
+  bottom: 180px;
+  left: 33%;
+  text-align: center;
+}
+.landing .landing-content {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+.landing .landing-content-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .landing-content-bg .landing-input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+.landing .landing-content-bg .landing-input-group .single-input {
+  display: flex;
+  flex-direction: column;
+}
+.landing .landing-content-bg .landing-input-group .single-input input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #0d0d0d;
+}
+.landing .landing-content-bg .landing-input-group .single-input input:focus {
+  outline: 2px solid #0d0d0d;
+  border: none;
+}
+.landing .landing-content-bg .landing-input-group .single-input #num-people,
+.landing .landing-content-bg .landing-input-group .single-input #distance {
+  width: 110px;
+  text-align: center;
+}
+.landing .landing-content-bg .landing-input-group .single-input #date-range {
+  width: 250px;
+}
+.landing .landing-content-bg .landing-input-group button {
+  display: flex;
+  color: #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  gap: 5px;
+}
+.landing .landing-content-bg .landing-input-group button .search-icon-container {
+  width: 20px;
+}
+.landing .landing-content-bg .landing-input-group button:hover {
+  background-color: #0d0d0d;
+  color: #e5e5e5;
+  border-radius: 5px;
+  padding: 5px;
+}/*# sourceMappingURL=global.css.map */

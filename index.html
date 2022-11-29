@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estimate the cost of renting a vehicle in NZ</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script src="./scripts/main-script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo-wrapper">
+        <a href="https://www.newzealand.com/nz/">
+          <img src="./Assets/Images/header-logo.svg" alt="NZ Campaign logo" />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/destinations/"
+              class="link-white"
+              >Destinations</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/things-to-do/"
+              class="link-white"
+              >Things to do</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/trips-and-driving-itineraries/"
+              class="link-white"
+              >Itineraries</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/getting-around/"
+              class="link-white"
+              >Transport</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/accommodation/"
+              class="link-white"
+              >Accommodation</a
+            >
+          </li>
+          <li>
+            <a href="https://www.newzealand.com/nz/facts/" class="link-white"
+              >About New Zealand</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.newzealand.com/nz/new-zealand-deals/"
+              class="link-white"
+              >Travel deals</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER -->
+
+    <!-- LANDING SECTION -->
+    <section class="landing">
+      <h1>Transport</h1>
+
+      <div class="landing-content">
+        <h2>Find out how much renting a vehicle costs</h2>
+        <br />
+
+        <div class="landing-content-bg">
+          <div class="landing-input-group">
+            <div class="single-input">
+              <label for="num-people">No. of people:</label>
+              <input type="number" id="num-people" min="1" />
+            </div>
+            <div class="single-input">
+              <label for="date-range">Rental dates:</label>
+              <input type="date" id="date-range" />
+            </div>
+            <div class="single-input">
+              <label for="distance">Approx. travel distance (kms.):</label>
+              <input type="number" id="distance" min="100" step="100" />
+            </div>
+            <button>
+              <div class="search-icon-container">
+                <img
+                  src="./Assets/Icons/search-icon-white.svg"
+                  alt="Search icon"
+                />
+              </div>
+              <p>Search</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANDING SECTION -->
+  </body>
+</html>

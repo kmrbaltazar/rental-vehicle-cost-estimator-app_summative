@@ -1,0 +1,233 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Pakati";
+  src: url("../Assets/Fonts/PurePakati-Notch.otf");
+}
+@import "./_media.scss";
+
+// Colours
+$black: #0d0d0d;
+$green: #468c3b;
+$off-white: #e5e5e5;
+$teal: #1a736a;
+$light-grey: #f2f2f2;
+$dark-grey: #c5c5c5;
+$light-green: #e2e38a;
+
+// Button mixin
+@mixin main-button-style {
+  background-color: $green;
+  color: $off-white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+// Button hover
+@mixin main-button-hover {
+  background-color: $black;
+  color: $off-white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+// Images
+@mixin basic-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// GLOBAL THINGZ
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: $black;
+}
+
+.link-white {
+  color: $light-grey;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  text-decoration: underline;
+}
+
+button {
+  @include main-button-style;
+  border: none;
+}
+
+img {
+  @include basic-image;
+}
+
+// START OF STYLES
+
+// Header
+header {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 70px;
+  gap: 20px;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+
+  .logo-wrapper {
+    width: 250px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+}
+
+// Landing Image
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Assets/Images/landing-cathedral-cove.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  h1 {
+    font-family: "Pakati", sans-serif;
+    padding-top: 170px;
+    color: $off-white;
+    margin: 0;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  h2 {
+    color: $off-white;
+    bottom: 180px;
+    left: 33%;
+    text-align: center;
+  }
+
+  .landing-content {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .landing-content-bg {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .landing-input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      .single-input {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid $black;
+        }
+
+        input:focus {
+          outline: 2px solid $black;
+          border: none;
+        }
+
+        #num-people,
+        #distance {
+          width: 110px;
+          text-align: center;
+        }
+
+        #date-range {
+          width: 250px;
+        }
+      }
+
+      button {
+        display: flex;
+        color: $off-white;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        gap: 5px;
+
+        .search-icon-container {
+          width: 20px;
+        }
+      }
+
+      button:hover {
+        @include main-button-hover;
+      }
+    }
+  }
+
+  //   .landing-content {
+  //     // position: absolute;
+  //     bottom: 0;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     width: 100vw;
+  //     padding: 50px;
+  //     gap: 50px;
+  //     background-color: rgba(255, 255, 255, 0.5);
+
+  //     .landing-input-group {
+  //       display: flex;
+  //       justify-content: center;
+  //       gap: 45px;
+
+  //       .single-input {
+  //         display: flex;
+  //         flex-direction: column;
+
+  //         input {
+  //           width: 110px;
+  //           height: 30px;
+  //           border-radius: 10px;
+  //         }
+  //       }
+
+  //       button {
+  //         display: flex;
+  //         color: $off-white;
+  //         align-items: center;
+  //         justify-content: center;
+  //         width: 110px;
+  //         gap: 5px;
+
+  //         .search-icon-container {
+  //           width: 20px;
+  //         }
+  //       }
+  //     }
+  //   }
+}
