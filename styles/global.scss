@@ -75,6 +75,10 @@ img {
   @include basic-image;
 }
 
+.no-display {
+    display: none;
+}
+
 // START OF STYLES
 
 // Header
@@ -188,46 +192,9 @@ header {
       }
     }
   }
+}
 
-  //   .landing-content {
-  //     // position: absolute;
-  //     bottom: 0;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     width: 100vw;
-  //     padding: 50px;
-  //     gap: 50px;
-  //     background-color: rgba(255, 255, 255, 0.5);
-
-  //     .landing-input-group {
-  //       display: flex;
-  //       justify-content: center;
-  //       gap: 45px;
-
-  //       .single-input {
-  //         display: flex;
-  //         flex-direction: column;
-
-  //         input {
-  //           width: 110px;
-  //           height: 30px;
-  //           border-radius: 10px;
-  //         }
-  //       }
-
-  //       button {
-  //         display: flex;
-  //         color: $off-white;
-  //         align-items: center;
-  //         justify-content: center;
-  //         width: 110px;
-  //         gap: 5px;
-
-  //         .search-icon-container {
-  //           width: 20px;
-  //         }
-  //       }
-  //     }
-  //   }
+// NO RESULTS SECTION
+#outside-search {
+    padding: 30px 50px;
 }

@@ -47,6 +47,10 @@ img {
      object-position: center;
 }
 
+.no-display {
+  display: none;
+}
+
 header {
   background-color: #0d0d0d;
   display: flex;
@@ -143,4 +147,8 @@ header nav ul {
   color: #e5e5e5;
   border-radius: 5px;
   padding: 5px;
+}
+
+#outside-search {
+  padding: 30px 50px;
 }/*# sourceMappingURL=global.css.map */
