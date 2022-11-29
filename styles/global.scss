@@ -4,7 +4,6 @@
   font-family: "Pakati";
   src: url("../Assets/Fonts/PurePakati-Notch.otf");
 }
-@import "./_media.scss";
 
 // Colours
 $black: #0d0d0d;
@@ -71,12 +70,16 @@ button {
   border: none;
 }
 
+button:hover {
+    @include main-button-hover;
+  }
+
 img {
   @include basic-image;
 }
 
 .no-display {
-    display: none;
+    display: none !important;
 }
 
 // START OF STYLES
@@ -197,4 +200,36 @@ header {
 // NO RESULTS SECTION
 #outside-search {
     padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .no-results-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .fern-icon-container {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        width: 150px;
+        margin: 30px auto;
+    }
+
+    button:hover {
+        @include main-button-hover;
+      }
 }
+
+
+
+@import "./_media.scss";
