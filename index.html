@@ -11,62 +11,120 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="logo-wrapper">
-        <a href="https://www.newzealand.com/nz/">
-          <img src="./Assets/Images/header-logo.svg" alt="NZ Campaign logo" />
-        </a>
+      <div class="header-content">
+        <div class="logo-wrapper">
+          <a href="#">
+            <img src="./Assets/Images/header-logo.svg" alt="NZ Campaign logo" />
+          </a>
+        </div>
+        <br />
+        <nav class="header-nav" id="header-nav">
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Things to do</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Itineraries</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Transport</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Accommodation</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link-white"
+                >About New Zealand</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Travel deals</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="burger-nav" id="burger-nav">
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Things to do</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Itineraries</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Transport</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Accommodation</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link-white"
+                >About New Zealand</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link-white"
+                >Travel deals</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-nav">
-        <ul>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/destinations/"
-              class="link-white"
-              >Destinations</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/things-to-do/"
-              class="link-white"
-              >Things to do</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/trips-and-driving-itineraries/"
-              class="link-white"
-              >Itineraries</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/getting-around/"
-              class="link-white"
-              >Transport</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/accommodation/"
-              class="link-white"
-              >Accommodation</a
-            >
-          </li>
-          <li>
-            <a href="https://www.newzealand.com/nz/facts/" class="link-white"
-              >About New Zealand</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.newzealand.com/nz/new-zealand-deals/"
-              class="link-white"
-              >Travel deals</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="burger-menu-container" id="burger-menu">
+        <img src="./Assets/Icons/menu-icon-white.svg" alt="Burger menu icon" />
+      </div>
     </header>
     <!-- HEADER -->
 
@@ -110,31 +168,27 @@
 
     <!-- SELECTED VEHICLES SECTION -->
     <section class="vehicles-section" id="vehicles-section">
-        <div id="within-search">
-            <h1>Select from the available devices</h1>
+      <div id="within-search">
+        <h1>Select from the available devices</h1>
+      </div>
 
+      <div id="outside-search" class="no-display">
+        <div class="no-results-title">
+          <h1>Aroha mai - we're sorry!</h1>
+          <div class="fern-icon-container">
+            <img src="./Assets/Icons/fern-icon-black.svg" alt="Fern Icon" />
+          </div>
         </div>
-
-
-
-        <div id="outside-search" class="no-display">
-            <div class="no-results-title">
-                <h1>Aroha mai - we're sorry!</h1>
-                <div class="fern-icon-container">
-                    <img src="./Assets/Icons/fern-icon-black.svg" alt="Fern Icon">
-                </div>
-            </div>
-            <p>We could not find any rental vehicles that match your search.</p>
-            <p>This current version only allows a maximum of <strong>6 people</strong> travelling for a maximum of <strong>15 days</strong>. Please try again.</p>
-            <button><a href="" class="link-white">Reset search</a></button>
-        </div>
-
+        <p>We could not find any rental vehicles that match your search.</p>
+        <p>
+          This current version only allows a maximum of
+          <strong>6 people</strong> travelling for a maximum of
+          <strong>15 days</strong>. Please try again.
+        </p>
+        <button><a href="" class="link-white">Reset search</a></button>
+      </div>
     </section>
 
-
-
-
     <!-- SELECTED VEHICLES SECTION -->
-
   </body>
 </html>

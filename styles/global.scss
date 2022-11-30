@@ -71,38 +71,52 @@ button {
 }
 
 button:hover {
-    @include main-button-hover;
-  }
+  @include main-button-hover;
+}
 
 img {
   @include basic-image;
 }
 
+// h1 {
+//     margin: 0;
+// }
+
 .no-display {
-    display: none !important;
+  display: none !important;
 }
 
 // START OF STYLES
 
 // Header
 header {
-  background-color: $black;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 70px;
-  gap: 20px;
-  position: fixed;
-  width: 100vw;
-  z-index: 10;
+    
+  .header-content {
+    background-color: $black;
+    padding: 40px 70px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 
-  .logo-wrapper {
-    width: 250px;
+    .logo-wrapper {
+      width: 250px;
+    }
+
+    .header-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+    }
+
+    .burger-nav ul {
+      display: none;
+    }
+
+    
   }
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
+  .burger-menu-container {
+    display: none;
   }
 }
 
@@ -134,7 +148,7 @@ header {
   .landing-content {
     position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
   }
 
   .landing-content-bg {
@@ -197,8 +211,14 @@ header {
   }
 }
 
-// NO RESULTS SECTION
-#outside-search {
+.vehicles-section {
+  // WITHIN SEARCH RESULTS
+  #within-search {
+    padding: 30px 50px;
+  }
+
+  // NO RESULTS SECTION
+  #outside-search {
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
@@ -206,30 +226,29 @@ header {
     gap: 10px;
 
     .no-results-title {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
 
-        .fern-icon-container {
-            width: 40px;
-            height: 40px;
-        }
+      .fern-icon-container {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
 
     button {
-        width: 150px;
-        margin: 30px auto;
+      width: 150px;
+      margin: 30px auto;
     }
 
     button:hover {
-        @include main-button-hover;
-      }
+      @include main-button-hover;
+    }
+  }
 }
-
-
 
 @import "./_media.scss";
