@@ -233,6 +233,67 @@ header .burger-menu-container {
      object-fit: contain;
 }
 
+.calculation-section {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.calculation-estimate-wrapper {
+  border-top: 1px solid #0d0d0d;
+  border-bottom: 1px solid #0d0d0d;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.costs-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.fuel-consumption-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1a736a;
+  color: #fff;
+  padding: 30px;
+  width: 80vw;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.cost-breakdown {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 0 auto;
+}
+.cost-breakdown .breakdown-list, .cost-breakdown .price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cost-breakdown .breakdown-list .cost-title, .cost-breakdown .price-list .cost-title {
+  text-decoration: underline;
+}
+.cost-breakdown .breakdown-list .cost-total, .cost-breakdown .price-list .cost-total {
+  color: #1a736a;
+  font-weight: 800;
+}
+.cost-breakdown .price-list {
+  align-items: flex-end;
+}
+.cost-breakdown .price-list h4 {
+  text-decoration: underline;
+}
+
+.average-petrol-price-desc {
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
 #outside-search {
   padding: 30px 50px;
   display: flex;
