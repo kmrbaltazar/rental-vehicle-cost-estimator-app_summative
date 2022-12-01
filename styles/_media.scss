@@ -194,4 +194,10 @@
   .average-petrol-price-desc {
       padding: 0;
   }
+
+  .provider-options-container {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+  }
 }

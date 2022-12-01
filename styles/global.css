@@ -294,6 +294,48 @@ header .burger-menu-container {
   padding: 0 20px;
 }
 
+.rental-providers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 90vw;
+  margin: 30px auto;
+}
+.rental-providers-section .provider-options-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rental-providers-section button {
+  width: 180px;
+  padding: 12px 0;
+  margin: 0 auto;
+}
+
+.provider-button-div {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+.provider-button-div a {
+  text-decoration: underline;
+}
+.provider-button-div img {
+  width: 40px;
+  height: 40px;
+}
+
+.provider-button-div:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 10px 6px #c5c5c5);
+}
+
 #outside-search {
   padding: 30px 50px;
   display: flex;
@@ -471,5 +513,10 @@ header .burger-menu-container {
   }
   .average-petrol-price-desc {
     padding: 0;
+  }
+  .provider-options-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }/*# sourceMappingURL=global.css.map */
