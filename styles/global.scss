@@ -212,6 +212,7 @@ header {
 // WITHIN SEARCH RESULTS START
 .within-search {
   padding: 30px 50px;
+  margin: 0 auto;
 
   .vehicle-cards-container {
     padding: 20px;
@@ -438,5 +439,49 @@ header {
     @include main-button-hover;
   }
 }
+
+// FOOTER
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: $black;
+  padding: 30px;
+  width: 100%;
+  margin-top: 100px;
+
+  .footer-divs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #fff;
+
+    p {
+      font-size: 14px;
+    }
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    .find-us {
+      width: 100px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .footer-logo-wrapper {
+    height: 50px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
 
 @import "./_media.scss";

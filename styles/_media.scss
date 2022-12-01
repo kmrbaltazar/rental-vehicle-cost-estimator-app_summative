@@ -91,6 +91,12 @@
   .cost-breakdown {
     width: 70vw;
   }
+
+  footer {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 40px;
+  }
 }
 
 // Mobile size
@@ -199,5 +205,24 @@
       flex-direction: column;
       gap: 20px;
       align-items: center;
+  }
+
+  footer {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+
+      .footer-divs {
+          position: relative;
+
+        hr {
+            display: flex !important;
+            width: 80vw;
+            position: absolute;
+            right: 2;
+            color: $dark-grey;
+        }
+      }
   }
 }
