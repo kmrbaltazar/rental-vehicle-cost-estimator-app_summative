@@ -368,7 +368,7 @@ header .burger-menu-container {
     align-items: center;
   }
   .within-search {
-    padding: 30px 10px;
+    padding: 30px 0px;
   }
   .vehicle-cards-container {
     gap: 50px !important;
@@ -392,6 +392,12 @@ header .burger-menu-container {
   }
   .vehicle-cards-container .vehicle-card .vehicle-description p {
     font-size: 13px !important;
+  }
+  .fuel-consumption-div {
+    width: 90vw;
+  }
+  .cost-breakdown {
+    width: 70vw;
   }
 }
 @media (max-width: 30em) {
@@ -442,5 +448,28 @@ header .burger-menu-container {
   }
   .icon-text-pair h5 {
     font-size: 12px;
+  }
+  .fuel-consumption-div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+    margin: 20px auto;
+  }
+  .cost-breakdown {
+    width: 90vw;
+    gap: 15px;
+  }
+  .cost-breakdown .breakdown-list p, .cost-breakdown .price-list p {
+    font-size: 14px;
+  }
+  .cost-breakdown .total-price {
+    text-align: right;
+  }
+  .cost-breakdown .price-list {
+    text-align: right;
+  }
+  .average-petrol-price-desc {
+    padding: 0;
   }
 }/*# sourceMappingURL=global.css.map */
