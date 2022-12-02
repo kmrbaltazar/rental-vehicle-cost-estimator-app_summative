@@ -54,6 +54,11 @@
 
   .within-search {
     padding: 30px 0px;
+    
+    h1 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
   }
 
   .vehicle-cards-container {
@@ -127,10 +132,7 @@
 
   .within-search {
     padding: 0;
-
-    h1 {
-      padding: 0 20px;
-    }
+    margin: 0 auto;
   }
 
   .vehicle-cards-container {

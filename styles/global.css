@@ -129,6 +129,8 @@ header .burger-menu-container {
   height: 30px;
   border-radius: 5px;
   border: 1px solid #0d0d0d;
+  text-align: center;
+  padding: 10px;
 }
 .landing .landing-content-bg .landing-input-group .single-input input:focus {
   outline: 2px solid #0d0d0d;
@@ -137,7 +139,6 @@ header .burger-menu-container {
 .landing .landing-content-bg .landing-input-group .single-input #num-people,
 .landing .landing-content-bg .landing-input-group .single-input #distance {
   width: 110px;
-  text-align: center;
 }
 .landing .landing-content-bg .landing-input-group .single-input #date-range {
   width: 250px;
@@ -449,6 +450,10 @@ footer .footer-logo-wrapper img {
   .within-search {
     padding: 30px 0px;
   }
+  .within-search h1 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
   .vehicle-cards-container {
     gap: 50px !important;
   }
@@ -499,9 +504,7 @@ footer .footer-logo-wrapper img {
   }
   .within-search {
     padding: 0;
-  }
-  .within-search h1 {
-    padding: 0 20px;
+    margin: 0 auto;
   }
   .vehicle-cards-container {
     gap: 50px !important;

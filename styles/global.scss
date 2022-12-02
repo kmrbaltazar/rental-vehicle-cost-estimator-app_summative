@@ -171,6 +171,8 @@ header {
           height: 30px;
           border-radius: 5px;
           border: 1px solid $black;
+          text-align: center;
+          padding: 10px;
         }
 
         input:focus {
@@ -181,7 +183,6 @@ header {
         #num-people,
         #distance {
           width: 110px;
-          text-align: center;
         }
 
         #date-range {
