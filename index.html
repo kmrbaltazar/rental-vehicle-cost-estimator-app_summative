@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css" >
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- UY Date Calculator JS -->
+    <script src="./scripts/date_calculator.js"></script>
     <!-- CSS and JS -->
     <link rel="stylesheet" href="./styles/global.css" />
     <script src="./scripts/main-script.js" defer></script>
@@ -96,17 +98,17 @@
           <div class="landing-input-group">
             <div class="single-input">
               <label for="num-people">No. of people:</label>
-              <input type="number" id="num-people" min="1" />
+              <input type="number" id="num-people" min="1" placeholder="1"/>
             </div>
             <div class="single-input">
               <label for="date-range">Rental dates:</label>
-              <input type="date" id="date-range" />
+              <input type="date" id="date-range" placeholder="select date range"/>
             </div>
             <div class="single-input">
               <label for="distance">Approx. travel distance (kms.):</label>
-              <input type="number" id="distance" min="100" step="100" />
+              <input type="number" id="distance" min="100" step="100" placeholder="100"/>
             </div>
-            <button>
+            <button id="search-btn">
               <div class="search-icon-container">
                 <img
                   src="./Assets/Icons/search-icon-white.svg"
@@ -125,11 +127,11 @@
     <!-- SELECTED VEHICLES SECTION -->
     <section class="vehicles-section" id="vehicles-section">
       <!-- Within search results -->
-      <div id="within-search" class="within-search">
+      <div id="within-search" class="within-search no-display">
         <h1>Select from the available devices</h1>
         <div class="vehicle-cards-container">
           <!-- Motorbike -->
-          <div class="vehicle-card" id="motorbike">
+          <div class="vehicle-card no-display" id="motorbike">
             <div class="vehicle-img-wrapper">
               <img src="./Assets/Images/motorbike.jpeg" alt="Motorbike image" />
             </div>
@@ -191,7 +193,7 @@
             </div>
           </div>
           <!-- Small car -->
-          <div class="vehicle-card" id="small-car">
+          <div class="vehicle-card no-display" id="small-car">
             <div class="vehicle-img-wrapper">
               <img src="./Assets/Images/small-car.png" alt="Small car image" />
             </div>
@@ -253,7 +255,7 @@
             </div>
           </div>
           <!-- Large car -->
-          <div class="vehicle-card" id="large-car">
+          <div class="vehicle-card no-display" id="large-car">
             <div class="vehicle-img-wrapper">
               <img src="./Assets/Images/large-car.jpeg" alt="Large car image" />
             </div>
@@ -315,7 +317,7 @@
             </div>
           </div>
           <!-- Motor-home -->
-          <div class="vehicle-card" id="motorhome">
+          <div class="vehicle-card no-display" id="motorhome">
             <div class="vehicle-img-wrapper">
               <img src="./Assets/Images/motorhome.png" alt="Motorhome image" />
             </div>

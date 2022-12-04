@@ -136,6 +136,21 @@ header .burger-menu-container {
   outline: 2px solid #0d0d0d;
   border: none;
 }
+.landing .landing-content-bg .landing-input-group .single-input input::-moz-placeholder {
+  color: #c5c5c5;
+  font-style: italic;
+  font-size: 14px;
+}
+.landing .landing-content-bg .landing-input-group .single-input input:-ms-input-placeholder {
+  color: #c5c5c5;
+  font-style: italic;
+  font-size: 14px;
+}
+.landing .landing-content-bg .landing-input-group .single-input input::placeholder {
+  color: #c5c5c5;
+  font-style: italic;
+  font-size: 14px;
+}
 .landing .landing-content-bg .landing-input-group .single-input #num-people,
 .landing .landing-content-bg .landing-input-group .single-input #distance {
   width: 110px;

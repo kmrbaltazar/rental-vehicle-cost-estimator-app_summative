@@ -180,6 +180,12 @@ header {
           border: none;
         }
 
+        input::placeholder {
+          color: $dark-grey;
+          font-style: italic;
+          font-size: 14px;
+        }
+
         #num-people,
         #distance {
           width: 110px;
