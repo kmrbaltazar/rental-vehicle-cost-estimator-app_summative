@@ -109,6 +109,7 @@
               <input type="number" id="distance" min="100" step="100" placeholder="100"/>
             </div>
             <button id="search-btn">
+              <a href="./index.html#vehicles-section">
               <div class="search-icon-container">
                 <img
                   src="./Assets/Icons/search-icon-white.svg"
@@ -116,6 +117,7 @@
                 />
               </div>
               <p>Search</p>
+            </a>
             </button>
           </div>
         </div>
@@ -131,13 +133,13 @@
         <h1>Select from the available devices</h1>
         <div class="vehicle-cards-container">
           <!-- Motorbike -->
-          <div class="vehicle-card no-display" id="motorbike">
+          <div class="vehicle-card no-display motorbike-class" id="motorbike">
             <div class="vehicle-img-wrapper">
               <img src="./Assets/Images/motorbike.jpeg" alt="Motorbike image" />
             </div>
             <!-- Middle description with name and vehicle details -->
             <div class="vehicle-description">
-              <h1>Motorbike</h1>
+              <h1 class="vehicle-name">Motorbike</h1>
               <!-- Icon list - grid -->
               <div class="icons-and-details-group-a iad-child">
                 <!-- People -->
@@ -168,7 +170,7 @@
                     alt="Fuel icon"
                     class="icon-img"
                   />
-                  <h5>3.7L / 100km</h5>
+                  <h5><span class="selected-vehicle-fuel-consumption">3.7</span>L / 100km</h5>
                 </div>
                 <!-- Transmission -->
                 <div class="icon-text-pair">
@@ -188,8 +190,8 @@
             <!-- Base rate -->
             <div class="vehicle-rate">
               <h4>AVERAGE BASE RATE</h4>
-              <h1>$109 / day</h1>
-              <button>View Cost Estimate</button>
+              <h1>$<span class="vehicle-price">109</span> / day</h1>
+              <button class="estimate-cost-btn"><a href="./index.html#calculation-and-rental-links-group">View Cost Estimate</a></button>
             </div>
           </div>
           <!-- Small car -->
@@ -199,7 +201,7 @@
             </div>
             <!-- Middle description with name and vehicle details -->
             <div class="vehicle-description">
-              <h1>Small Car</h1>
+              <h1 class="vehicle-name">Small Car</h1>
               <!-- Icon list - grid -->
               <div class="icons-and-details-group-a iad-child">
                 <!-- People -->
@@ -230,7 +232,7 @@
                     alt="Fuel icon"
                     class="icon-img"
                   />
-                  <h5>8.5L / 100km</h5>
+                  <h5><span class="selected-vehicle-fuel-consumption">8.5</span>L / 100km</h5>
                 </div>
                 <!-- Transmission -->
                 <div class="icon-text-pair">
@@ -250,8 +252,8 @@
             <!-- Base rate -->
             <div class="vehicle-rate">
               <h4>AVERAGE BASE RATE</h4>
-              <h1>$129 / day</h1>
-              <button>View Cost Estimate</button>
+              <h1>$<span class="vehicle-price">129</span> / day</h1>
+              <button class="estimate-cost-btn"><a href="./index.html#calculation-and-rental-links-group">View Cost Estimate</a></button>
             </div>
           </div>
           <!-- Large car -->
@@ -261,7 +263,7 @@
             </div>
             <!-- Middle description with name and vehicle details -->
             <div class="vehicle-description">
-              <h1>Large Car</h1>
+              <h1 class="vehicle-name">Large Car</h1>
               <!-- Icon list - grid -->
               <div class="icons-and-details-group-a iad-child">
                 <!-- People -->
@@ -292,7 +294,7 @@
                     alt="Fuel icon"
                     class="icon-img"
                   />
-                  <h5>9.7L / 100km</h5>
+                  <h5><span class="selected-vehicle-fuel-consumption">9.7</span>L / 100km</h5>
                 </div>
                 <!-- Transmission -->
                 <div class="icon-text-pair">
@@ -312,8 +314,8 @@
             <!-- Base rate -->
             <div class="vehicle-rate">
               <h4>AVERAGE BASE RATE</h4>
-              <h1>$144 / day</h1>
-              <button>View Cost Estimate</button>
+              <h1>$<span class="vehicle-price">144</span> / day</h1>
+              <button class="estimate-cost-btn"><a href="./index.html#calculation-and-rental-links-group">View Cost Estimate</a></button>
             </div>
           </div>
           <!-- Motor-home -->
@@ -323,7 +325,7 @@
             </div>
             <!-- Middle description with name and vehicle details -->
             <div class="vehicle-description">
-              <h1>Motor home</h1>
+              <h1 class="vehicle-name">Motor home</h1>
               <!-- Icon list - grid -->
               <div class="icons-and-details-group-a iad-child">
                 <!-- People -->
@@ -354,7 +356,7 @@
                     alt="Fuel icon"
                     class="icon-img"
                   />
-                  <h5>17L / 100km</h5>
+                  <h5><span class="selected-vehicle-fuel-consumption">17</span>L / 100km</h5>
                 </div>
                 <!-- Transmission -->
                 <div class="icon-text-pair">
@@ -374,8 +376,8 @@
             <!-- Base rate -->
             <div class="vehicle-rate">
               <h4>AVERAGE BASE RATE</h4>
-              <h1>$200 / day</h1>
-              <button>View Cost Estimate</button>
+              <h1>$<span class="vehicle-price">200</span> / day</h1>
+              <button class="estimate-cost-btn"><a href="./index.html#calculation-and-rental-links-group">View Cost Estimate</a></button>
             </div>
           </div>
         </div>
@@ -400,11 +402,12 @@
     </section>
 
     <!-- SELECTED VEHICLES SECTION -->
-
+    
+    <section id="calculation-and-rental-links-group" class="no-display">
     <!-- COST ESTIMATE SECTION -->
     <section class="calculation-section">
       <!-- Put ID in span when transferred to index.html -->
-      <h1>Cost Estimate for a <span>Small Car</span></h1>
+      <h1>Cost Estimate for a <span id="selected-vehicle-type"></span></h1>
       <div class="calculation-estimate-wrapper">
         <div class="costs-div">
           <!-- Child 1 -->
@@ -412,12 +415,13 @@
             <div class="fuel-calc-info">
               <h5>FUEL CONSUMPTION</h5>
               <br />
-              <p><strong>8.5L / 100kms</strong></p>
+              <p><strong><span id="fuel-consumption-span"></span>L / 100kms</strong></p>
             </div>
             <div class="fuel-calc-info">
               <h5>APPROX. TRAVEL DISTANCE</h5>
               <br />
-              <p><strong>300 kms</strong></p>
+              <p><strong>
+               <span id="travel-distance-span"></span> kms</strong></p>
             </div>
             <div class="fuel-calc-info">
               <h5>AVE. PRICE OF PETROL<sup>*</sup></h5>
@@ -427,7 +431,7 @@
             <div class="fuel-calc-info">
               <h5>FUEL COST</h5>
               <br />
-              <p><strong>$56.36</strong></p>
+              <p><strong>$<span id="calculated-fuel-cost"></span></strong></p>
             </div>
           </div>
           <!-- Child 2 -->
@@ -435,18 +439,18 @@
             <div class="breakdown-list">
               <h4 class="cost-title">Breakdown</h4>
               <p class="rental-price">
-                Vehicle rental (<span>3</span> days at $<span>129</span> / day)
+                Vehicle rental (<span id="chosen-days"></span> days at $<span id="chosen-price"></span> / day)
               </p>
               <p class="fuel-cost">
-                Fuel cost (<span>25.5</span>L at $2.21 / L)
+                Fuel cost (<span id="fuel-liter-usage"></span>L at $2.21 / L)
               </p>
               <h4 class="cost-total">TOTAL ESTIMATED COST</h4>
             </div>
             <div class="price-list">
               <h4 class="cost-title">Price</h4>
-              <p>$<span>387.00</span> NZD</p>
-              <p>$<span>56.36</span> NZD</p>
-              <h4 class="cost-total total-price">$<span>443.35</span> NZD</h4>
+              <p>$<span id="vehicle-rental-total"></span> NZD</p>
+              <p>$<span id="fuel-cost-total">56.36</span> NZD</p>
+              <h4 class="cost-total total-price">$<span id="overall-cost">443.35</span> NZD</h4>
             </div>
           </div>
           <!-- Child 3 -->
@@ -497,6 +501,7 @@
       <button><a href="" class="link-white">Reset search</a></button>
     </section>
     <!-- RENTAL PROVIDERS SECTION -->
+  </section>
 
     <!-- FOOTER -->
     <footer>
