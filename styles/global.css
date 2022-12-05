@@ -77,7 +77,7 @@ header .header-content .header-nav ul {
 header .header-content .burger-nav ul {
   display: none;
 }
-header .burger-menu-container {
+header .header-content .burger-menu-container {
   display: none;
 }
 
@@ -434,6 +434,10 @@ footer .footer-logo-wrapper img {
   }
   header .header-content {
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
   header .header-content .header-nav ul {
     display: none;
@@ -446,22 +450,14 @@ footer .footer-logo-wrapper img {
     align-items: flex-end;
     position: absolute;
     right: 0;
+    top: 80px;
     padding: 40px;
     background-color: #0d0d0d;
   }
-  header .header-content .logo-wrapper {
-    width: 220px;
-  }
-  header .burger-menu-container {
-    display: flex;
-    align-items: center;
-    width: 35px;
-    height: 35px;
+  header .header-content .burger-menu-container {
+    display: block;
     z-index: 100;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 25px 30px 0 0;
+    scale: 0.7;
   }
   .landing .landing-input-group {
     flex-direction: column;
@@ -514,8 +510,12 @@ footer .footer-logo-wrapper img {
 }
 @media (max-width: 30em) {
   header .header-content {
+    justify-content: space-between;
     padding: 20px;
     height: 90px;
+  }
+  header .header-content .burger-menu-container {
+    scale: 0.65;
   }
   .landing h1 {
     font-size: 50px;
@@ -572,7 +572,8 @@ footer .footer-logo-wrapper img {
     width: 90vw;
     gap: 15px;
   }
-  .cost-breakdown .breakdown-list p, .cost-breakdown .price-list p {
+  .cost-breakdown .breakdown-list p,
+.cost-breakdown .price-list p {
     font-size: 14px;
   }
   .cost-breakdown .total-price {

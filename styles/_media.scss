@@ -5,6 +5,10 @@
     position: relative;
     .header-content {
       padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
 
       .header-nav ul {
         display: none;
@@ -18,25 +22,16 @@
         align-items: flex-end;
         position: absolute;
         right: 0;
+        top: 80px;
         padding: 40px;
         background-color: $black;
       }
 
-      .logo-wrapper {
-        width: 220px;
+      .burger-menu-container {
+        display: block;
+        z-index: 100;
+        scale: 0.7;
       }
-    }
-
-    .burger-menu-container {
-      display: flex;
-      align-items: center;
-      width: 35px;
-      height: 35px;
-      z-index: 100;
-      position: fixed;
-      right: 0;
-      top: 0;
-      margin: 25px 30px 0 0;
     }
   }
 
@@ -53,10 +48,10 @@
 
   .within-search {
     padding: 30px 0px;
-    
+
     h1 {
-        margin-left: 5vw;
-        margin-right: 5vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
     }
   }
 
@@ -97,9 +92,9 @@
   }
 
   footer {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
   }
 }
 
@@ -107,12 +102,12 @@
 @media (max-width: 30em) {
   header {
     .header-content {
-        padding: 20px;
-        height: 90px;
+      justify-content: space-between;
+      padding: 20px;
+      height: 90px;
 
-      .logo-wrapper {
-        // width: 180px;
-        // height: 100%;
+      .burger-menu-container {
+        scale: 0.65;
       }
     }
   }
@@ -188,47 +183,48 @@
     width: 90vw;
     gap: 15px;
 
-    .breakdown-list, .price-list {
-        p {
-            font-size: 14px;
-        }
+    .breakdown-list,
+    .price-list {
+      p {
+        font-size: 14px;
+      }
     }
 
     .total-price {
-        text-align: right;
+      text-align: right;
     }
 
     .price-list {
-        text-align: right;
+      text-align: right;
     }
   }
 
   .average-petrol-price-desc {
-      padding: 0;
+    padding: 0;
   }
 
   .provider-options-container {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   footer {
-      flex-direction: column;
-      gap: 30px;
-      align-items: flex-start;
-      flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 
-      .footer-divs {
-          position: relative;
+    .footer-divs {
+      position: relative;
 
-        hr {
-            display: flex !important;
-            width: 80vw;
-            position: absolute;
-            right: 2;
-            color: $dark-grey;
-        }
+      hr {
+        display: flex !important;
+        width: 80vw;
+        position: absolute;
+        right: 2;
+        color: $dark-grey;
       }
+    }
   }
 }
