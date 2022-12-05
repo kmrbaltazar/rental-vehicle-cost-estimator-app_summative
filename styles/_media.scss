@@ -4,8 +4,7 @@
   header {
     position: relative;
     .header-content {
-      // position: relative;
-      padding-left: 30px !important;
+      padding: 30px;
 
       .header-nav ul {
         display: none;
@@ -31,13 +30,13 @@
     .burger-menu-container {
       display: flex;
       align-items: center;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       z-index: 100;
       position: fixed;
       right: 0;
       top: 0;
-      margin: 30px 30px 0 0;
+      margin: 25px 30px 0 0;
     }
   }
 
@@ -108,8 +107,12 @@
 @media (max-width: 30em) {
   header {
     .header-content {
+        padding: 20px;
+        height: 90px;
+
       .logo-wrapper {
-        width: 180px;
+        // width: 180px;
+        // height: 100%;
       }
     }
   }
@@ -117,6 +120,7 @@
   .landing {
     h1 {
       font-size: 50px;
+      padding-top: 150px;
     }
 
     .landing-content {

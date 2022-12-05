@@ -90,7 +90,7 @@ header .burger-menu-container {
 }
 .landing h1 {
   font-family: "Pakati", sans-serif;
-  padding-top: 190px;
+  padding-top: 200px;
   color: #e5e5e5;
   margin: 0;
   font-size: 80px;
@@ -433,7 +433,7 @@ footer .footer-logo-wrapper img {
     position: relative;
   }
   header .header-content {
-    padding-left: 30px !important;
+    padding: 30px;
   }
   header .header-content .header-nav ul {
     display: none;
@@ -455,13 +455,13 @@ footer .footer-logo-wrapper img {
   header .burger-menu-container {
     display: flex;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     z-index: 100;
     position: fixed;
     right: 0;
     top: 0;
-    margin: 30px 30px 0 0;
+    margin: 25px 30px 0 0;
   }
   .landing .landing-input-group {
     flex-direction: column;
@@ -513,11 +513,13 @@ footer .footer-logo-wrapper img {
   }
 }
 @media (max-width: 30em) {
-  header .header-content .logo-wrapper {
-    width: 180px;
+  header .header-content {
+    padding: 20px;
+    height: 90px;
   }
   .landing h1 {
     font-size: 50px;
+    padding-top: 150px;
   }
   .landing .landing-content h2 {
     font-size: 16px;

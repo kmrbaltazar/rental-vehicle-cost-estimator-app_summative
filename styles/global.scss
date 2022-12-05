@@ -79,10 +79,6 @@ img {
   @include basic-image;
 }
 
-// h1 {
-//     margin: 0;
-// }
-
 .no-display {
   display: none !important;
 }
@@ -129,7 +125,7 @@ header {
 
   h1 {
     font-family: "Pakati", sans-serif;
-    padding-top: 190px;
+    padding-top: 200px;
     color: $off-white;
     margin: 0;
     font-size: 80px;
