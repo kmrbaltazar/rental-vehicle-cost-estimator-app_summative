@@ -110,7 +110,7 @@ document.getElementById("search-btn").onclick = function () {
     // CALCULATE OVERALL RENTAL COST
     chosen_days_calc_span.innerHTML = difference_in_days;
     chosen_price_calc_span.innerHTML = vehicle_prices[i].innerHTML;
-    fuel_liter_usage.innerHTML = Number(vehicle_fuel_consumptions[i].innerHTML) * (travel_distance.value/100);
+    fuel_liter_usage.innerHTML = (Number(vehicle_fuel_consumptions[i].innerHTML) * (travel_distance.value/100)).toFixed(2);
     vehicle_rental_total.innerHTML = difference_in_days * Number(vehicle_prices[i].innerHTML);
     fuel_cost_total.innerHTML = calculated_fuel_cost.innerHTML;
     overall_cost.innerHTML = Number(vehicle_rental_total.innerHTML) + Number(fuel_cost_total.innerHTML);
