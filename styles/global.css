@@ -368,6 +368,7 @@ header .header-content .burger-menu-container {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  text-align: center;
 }
 #outside-search .no-results-title {
   display: flex;
@@ -588,6 +589,10 @@ footer .footer-logo-wrapper img {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  .fern-icon-container img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   footer {
     flex-direction: column;

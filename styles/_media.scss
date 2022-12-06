@@ -209,6 +209,12 @@
     align-items: center;
   }
 
+  .fern-icon-container {
+      img {
+          object-fit: contain;
+      }
+  }
+
   footer {
     flex-direction: column;
     gap: 30px;
