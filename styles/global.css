@@ -30,7 +30,7 @@ body {
   text-decoration: underline;
 }
 
-button {
+button, .button-style {
   background-color: #468c3b;
   color: #e5e5e5;
   border-radius: 5px;
@@ -38,7 +38,7 @@ button {
   border: none;
 }
 
-button:hover {
+button:hover, .button-style:hover {
   background-color: #0d0d0d;
   color: #e5e5e5;
   border-radius: 5px;
@@ -228,13 +228,11 @@ header .header-content .burger-menu-container {
   align-items: center;
   gap: 10px;
 }
-.within-search .vehicle-cards-container .vehicle-card .vehicle-rate button {
+.within-search .vehicle-cards-container .vehicle-card .vehicle-rate .button-style {
   width: 180px;
   padding: 10px 0;
-}
-.within-search .vehicle-cards-container .vehicle-card .vehicle-rate a {
-  color: #e5e5e5;
   text-decoration: none;
+  text-align: center;
 }
 
 .icons-and-details-group-a, .icons-and-details-group-b {
@@ -327,10 +325,12 @@ header .header-content .burger-menu-container {
   display: flex;
   justify-content: space-evenly;
 }
-.rental-providers-section button {
+.rental-providers-section .button-style {
   width: 180px;
   padding: 12px 0;
   margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 .provider-button-div {
@@ -378,14 +378,13 @@ header .header-content .burger-menu-container {
   width: 40px;
   height: 40px;
 }
-#outside-search a {
-  text-decoration: none;
-}
-#outside-search button {
+#outside-search .button-style {
   width: 150px;
   margin: 30px auto;
+  text-align: center;
+  text-decoration: none;
 }
-#outside-search button:hover {
+#outside-search .button-style:hover {
   background-color: #0d0d0d;
   color: #e5e5e5;
   border-radius: 5px;
@@ -603,7 +602,6 @@ footer .footer-logo-wrapper img {
     display: flex !important;
     width: 80vw;
     position: absolute;
-    right: 2;
     color: #c5c5c5;
   }
 }/*# sourceMappingURL=global.css.map */

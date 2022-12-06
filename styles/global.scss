@@ -66,12 +66,12 @@ body {
   text-decoration: underline;
 }
 
-button {
+button, .button-style {
   @include main-button-style;
   border: none;
 }
 
-button:hover {
+button:hover, .button-style:hover {
   @include main-button-hover;
 }
 
@@ -271,15 +271,13 @@ header {
         align-items: center;
         gap: 10px;
 
-        button {
+        .button-style {
           width: 180px;
           padding: 10px 0;
+          text-decoration: none;
+          text-align: center;
         }
 
-        a {
-          color: $off-white;
-          text-decoration: none;
-        }
       }
     }
   }
@@ -382,10 +380,12 @@ header {
     
   }
 
-  button {
+  .button-style {
     width: 180px;
     padding: 12px 0;
     margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
   }
 }
 
@@ -441,16 +441,14 @@ header {
     }
   }
 
-  a {
+  .button-style {
+    width: 150px;
+    margin: 30px auto;
+    text-align: center;
     text-decoration: none;
   }
 
-  button {
-    width: 150px;
-    margin: 30px auto;
-  }
-
-  button:hover {
+  .button-style:hover {
     @include main-button-hover;
   }
 }
