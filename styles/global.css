@@ -90,7 +90,7 @@ header .header-content .burger-menu-container {
 }
 .landing h1 {
   font-family: "Pakati", sans-serif;
-  padding-top: 200px;
+  padding-top: 30vh;
   color: #e5e5e5;
   margin: 0;
   font-size: 80px;
@@ -169,13 +169,6 @@ header .header-content .burger-menu-container {
 }
 .landing .landing-content-bg .landing-input-group a .search-icon-container {
   width: 20px;
-}
-.landing .landing-content-bg .landing-input-group button:hover {
-  background-color: #0d0d0d;
-  color: #e5e5e5;
-  border-radius: 5px;
-  padding: 5px;
-  cursor: pointer;
 }
 
 .within-search {
